@@ -73,7 +73,7 @@ plt.show()
 
 # KDE and Histogramd for group corrected (nopec) cz's
 kdt_nopec = cKDTree(coord_nopec)
-dist_nopec,inds_nopec = kdt.query(coord_nopec, k=2)
+dist_nopec,inds_nopec = kdt_nopec.query(coord_nopec, k=2)
 dist_nopec = dist_nopec[:,1]
 inds_nopec = inds_nopec[:,1]
 
